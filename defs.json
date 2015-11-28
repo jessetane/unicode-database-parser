@@ -1,0 +1,409 @@
+{
+  "propertyNames": [
+    "Code Point",
+    "Name",
+    "General Category",
+    "Canonical Combining Class",
+    "Bidirectional Class",
+    "Decomposition Mapping",
+    "Decimal Value",
+    "Digit Value",
+    "Numeric Value",
+    "Bidirectional Mirrored",
+    "Unicode 1 Name",
+    "ISO 10646 Comment",
+    "Uppercase Mapping",
+    "Lowercase Mapping",
+    "Titlecase Mapping"
+  ],
+  "abbreviations": {
+    "General Category": {
+      "Lu": {
+        "long": "Uppercase_Letter",
+        "description": "an uppercase letter"
+      },
+      "Ll": {
+        "long": "Lowercase_Letter",
+        "description": "a lowercase letter"
+      },
+      "Lt": {
+        "long": "Titlecase_Letter",
+        "description": "a digraphic character, with first part uppercase"
+      },
+      "Lm": {
+        "long": "Modifier_Letter",
+        "description": "a modifier letter"
+      },
+      "Lo": {
+        "long": "Other_Letter",
+        "description": "other letters, including syllables and ideographs"
+      },
+      "Mn": {
+        "long": "Nonspacing_Mark",
+        "description": "a nonspacing combining mark (zero advance width)"
+      },
+      "Mc": {
+        "long": "Spacing_Mark",
+        "description": "a spacing combining mark (positive advance width)"
+      },
+      "Me": {
+        "long": "Enclosing_Mark",
+        "description": "an enclosing combining mark"
+      },
+      "Nd": {
+        "long": "Decimal_Number",
+        "description": "a decimal digit"
+      },
+      "Nl": {
+        "long": "Letter_Number",
+        "description": "a letterlike numeric character"
+      },
+      "No": {
+        "long": "Other_Number",
+        "description": "a numeric character of other type"
+      },
+      "Pc": {
+        "long": "Connector_Punctuation",
+        "description": "a connecting punctuation mark, like a tie"
+      },
+      "Pd": {
+        "long": "Dash_Punctuation",
+        "description": "a dash or hyphen punctuation mark"
+      },
+      "Ps": {
+        "long": "Open_Punctuation",
+        "description": "an opening punctuation mark (of a pair)"
+      },
+      "Pe": {
+        "long": "Close_Punctuation",
+        "description": "a closing punctuation mark (of a pair)"
+      },
+      "Pi": {
+        "long": "Initial_Punctuation",
+        "description": "an initial quotation mark"
+      },
+      "Pf": {
+        "long": "Final_Punctuation",
+        "description": "a final quotation mark"
+      },
+      "Po": {
+        "long": "Other_Punctuation",
+        "description": "a punctuation mark of other type"
+      },
+      "Sm": {
+        "long": "Math_Symbol",
+        "description": "a symbol of mathematical use"
+      },
+      "Sc": {
+        "long": "Currency_Symbol",
+        "description": "a currency sign"
+      },
+      "Sk": {
+        "long": "Modifier_Symbol",
+        "description": "a non-letterlike modifier symbol"
+      },
+      "So": {
+        "long": "Other_Symbol",
+        "description": "a symbol of other type"
+      },
+      "Zs": {
+        "long": "Space_Separator",
+        "description": "a space character (of various non-zero widths)"
+      },
+      "Zl": {
+        "long": "Line_Separator",
+        "description": "U+2028 LINE SEPARATOR only"
+      },
+      "Zp": {
+        "long": "Paragraph_Separator",
+        "description": "U+2029 PARAGRAPH SEPARATOR only"
+      },
+      "Cc": {
+        "long": "Control",
+        "description": "a C0 or C1 control code"
+      },
+      "Cf": {
+        "long": "Format",
+        "description": "a format control character"
+      },
+      "Cs": {
+        "long": "Surrogate",
+        "description": "a surrogate code point"
+      },
+      "Co": {
+        "long": "Private_Use",
+        "description": "a private-use character"
+      },
+      "Cn": {
+        "long": "Unassigned",
+        "description": "a reserved unassigned code point or a noncharacter"
+      }
+    },
+    "Canonical Combining Class": {
+      "0": {
+        "long": "Not_Reordered",
+        "description": "Spacing and enclosing marks; also many vowel and consonant signs, even if nonspacing"
+      },
+      "1": {
+        "long": "Overlay",
+        "description": "Marks which overlay a base letter or symbol"
+      },
+      "7": {
+        "long": "Nukta",
+        "description": "Diacritic nukta marks in Brahmi-derived scripts"
+      },
+      "8": {
+        "long": "Kana_Voicing",
+        "description": "Hiragana/Katakana voicing marks"
+      },
+      "9": {
+        "long": "Virama",
+        "description": "Viramas"
+      },
+      "10": {
+        "long": "Ccc10",
+        "description": "Start of fixed position classes"
+      },
+      "199": {
+        "long": "",
+        "description": "End of fixed position classes"
+      },
+      "200": {
+        "long": "Attached_Below_Left",
+        "description": "Marks attached at the bottom left"
+      },
+      "202": {
+        "long": "Attached_Below",
+        "description":  "Marks attached directly below"
+      },
+      "204": {
+        "long": "",
+        "description": "Marks attached at the bottom right"
+      },
+      "208": {
+        "long": "",
+        "description": "Marks attached to the left"
+      },
+      "210": {
+        "long": "",
+        "description": "Marks attached to the right"
+      },
+      "212": {
+        "long": "",
+        "description": "Marks attached at the top left"
+      },
+      "214": {
+        "long": "Attached_Above",
+        "description": "Marks attached directly above"
+      },
+      "216": {
+        "long": "Attached_Above_Right",
+        "description": "Marks attached at the top right"
+      },
+      "218": {
+        "long": "Below_Left",
+        "description": "Distinct marks at the bottom left"
+      },
+      "220": {
+        "long": "Below",
+        "description": "Distinct marks directly below"
+      },
+      "222": {
+        "long": "Below_Right",
+        "description": "Distinct marks at the bottom right"
+      },
+      "224": {
+        "long": "Left",
+        "description": "Distinct marks to the left"
+      },
+      "226": {
+        "long": "Right",
+        "description": "Distinct marks to the right"
+      },
+      "228": {
+        "long": "Above_Left",
+        "description": "Distinct marks at the top left"
+      },
+      "230": {
+        "long": "Above",
+        "description": "Distinct marks directly above"
+      },
+      "232": {
+        "long": "Above_Right",
+        "description": "Distinct marks at the top right"
+      },
+      "233": {
+        "long": "Double_Below",
+        "description": "Distinct marks subtending two bases"
+      },
+      "234": {
+        "long": "Double_Above",
+        "description": "Distinct marks extending above two bases"
+      },
+      "240": {
+        "long": "Iota_Subscript",
+        "description": "Greek iota subscript only"
+      }
+    },
+    "Bidirectional Class": {
+      "L": {
+        "long": "Left_To_Right",
+        "description": "any strong left-to-right character"
+      },
+      "R": {
+        "long": "Right_To_Left",
+        "description": "any strong right-to-left (non-Arabic-type) character"
+      },
+      "AL": {
+        "long": "Arabic_Letter",
+        "description": "any strong right-to-left (Arabic-type) character"
+      },
+      "EN": {
+        "long": "European_Number",
+        "description": "any ASCII digit or Eastern Arabic-Indic digit"
+      },
+      "ES": {
+        "long": "European_Separator",
+        "description": "plus and minus signs"
+      },
+      "ET": {
+        "long": "European_Terminator",
+        "description": "a terminator in a numeric format context, includes currency signs"
+      },
+      "AN": {
+        "long": "Arabic_Number",
+        "description": "any Arabic-Indic digit"
+      },
+      "CS": {
+        "long": "Common_Separator",
+        "description": "commas, colons, and slashes"
+      },
+      "NSM": {
+        "long": "Nonspacing_Mark",
+        "description": "any nonspacing mark"
+      },
+      "BN": {
+        "long": "Boundary_Neutral",
+        "description": "most format characters, control codes, or noncharacters"
+      },
+      "B": {
+        "long": "Paragraph_Separator",
+        "description": "various newline characters"
+      },
+      "S": {
+        "long": "Segment_Separator",
+        "description": "various segment-related control codes"
+      },
+      "WS": {
+        "long": "White_Space",
+        "description": "spaces"
+      },
+      "ON": {
+        "long": "Other_Neutral",
+        "description": "most other symbols and punctuation marks"
+      },
+      "LRE": {
+        "long": "Left_To_Right_Embedding",
+        "description": "U+202A: the LR embedding control"
+      },
+      "LRO": {
+        "long": "Left_To_Right_Override",
+        "description": "U+202D: the LR override control"
+      },
+      "RLE": {
+        "long": "Right_To_Left_Embedding",
+        "description": "U+202B: the RL embedding control"
+      },
+      "RLO": {
+        "long": "Right_To_Left_Override",
+        "description": "U+202E: the RL override control"
+      },
+      "PDF": {
+        "long": "Pop_Directional_Format",
+        "description": "U+202C: terminates an embedding or override control"
+      },
+      "LRI": {
+        "long": "Left_To_Right_Isolate",
+        "description": "U+2066: the LR isolate control"
+      },
+      "RLI": {
+        "long": "Right_To_Left_Isolate",
+        "description": "U+2067: the RL isolate control"
+      },
+      "FSI": {
+        "long": "First_Strong_Isolate",
+        "description": "U+2068: the first strong isolate control"
+      },
+      "PDI": {
+        "long": "Pop_Directional_Isolate",
+        "description": "U+2069: terminates an isolate control"
+      }
+    },
+    "Decomposition Type": {
+      "<font>": {
+        "tag": "<font>",
+        "description": "Font variant (for example, a blackletter form)"
+      },
+      "<noBreak>": {
+        "tag": "<noBreak>",
+        "description": "No-break version of a space or hyphen"
+      },
+      "<initial>": {
+        "tag": "<initial>",
+        "description": "Initial presentation form (Arabic)"
+      },
+      "<medial>": {
+        "tag": "<medial>",
+        "description": "Medial presentation form (Arabic)"
+      },
+      "<final>": {
+        "tag": "<final>",
+        "description": "Final presentation form (Arabic)"
+      },
+      "<isolated>": {
+        "tag": "<isolated>",
+        "description": "Isolated presentation form (Arabic)"
+      },
+      "<circle>": {
+        "tag": "<circle>",
+        "description": "Encircled form"
+      },
+      "<super>": {
+        "tag": "<super>",
+        "description": "Superscript form"
+      },
+      "<sub>": {
+        "tag": "<sub>",
+        "description": "Subscript form"
+      },
+      "<vertical>": {
+        "tag": "<vertical>",
+        "description": "Vertical layout presentation form"
+      },
+      "<wide>": {
+        "tag": "<wide>",
+        "description": "Wide (or zenkaku) compatibility character"
+      },
+      "<narrow>": {
+        "tag": "<narrow>",
+        "description": "Narrow (or hankaku) compatibility character"
+      },
+      "<small>": {
+        "tag": "<small>",
+        "description": "Small variant form (CNS compatibility)"
+      },
+      "<square>": {
+        "tag": "<square>",
+        "description": "CJK squared font variant"
+      },
+      "<fraction>": {
+        "tag": "<fraction>",
+        "description": "Vulgar fraction form"
+      },
+      "<compat>": {
+        "tag": "<compat>",
+        "description": "Otherwise unspecified compatibility character"
+      }
+    }
+  }
+}

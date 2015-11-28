@@ -1,0 +1,21 @@
+{
+  "name": "unicode-data-parser",
+  "version": "1.0.0",
+  "description": "Parse a single line from UnicodeData.txt",
+  "scripts": {
+    "test": "npm run get-data && node test",
+    "example": "npm run get-data && node example",
+    "get-data": "[ ! -f UnicodeData.txt ] && node bin/download-unicode-data.js || exit 0"
+  },
+  "dependencies": {
+    "unicode-block-from-code-point": "github:jessetane/unicode-block-from-code-point"
+  },
+  "devDependencies": {
+    "hyperquest": "^1.2.0",
+    "split2": "^1.0.0",
+    "tape": "^4.2.2"
+  },
+  "repository": "https://github.com/jessetane/unicode-data-parser",
+  "author": "jesse.tane@gmail.com",
+  "license": "WTFPL"
+}
