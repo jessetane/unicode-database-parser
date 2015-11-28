@@ -8,8 +8,10 @@ var blockFromCodePoint = require('unicode-block-from-code-point')
 function parse (line) {
   var character = {}
   var properties = line.split(';')
-  properties.forEach(function (property, i) {
-    if (!property) return
+  var i = -1
+  while (++i < properties.length) {
+    var property = properties[i]
+    if (!property) break
     var name = propertyNames[i]
     if (name === 'Code Point') {
       character['Hex String'] = property
@@ -26,29 +28,29 @@ function parse (line) {
         return parseInt(n, 16)
       })
     } else if (name === 'Bidirectional Mirrored') {
-      if (property === 'N') return
+      if (property === 'N') break
       property = true
     } else if (name === 'Decimal Value') {
       property = parseInt(property, 10)
     } else if (name === 'Digit Value') {
-      if (character['Decimal Value'] !== undefined) return
+      if (character['Decimal Value'] !== undefined) break
       property = parseInt(property, 10)
     } else if (name === 'Numeric Value') {
-      if (character['Digit Value'] !== undefined) return
+      if (character['Digit Value'] !== undefined) break
     } else if (name === 'Uppercase Mapping') {
       property = parseInt(property, 16)
     } else if (name === 'Lowercase Mapping') {
       property = parseInt(property, 16)
     } else if (name === 'Titlecase Mapping') {
       property = parseInt(property, 16)
-      if (property === character['Uppercase Mapping']) return
+      if (property === character['Uppercase Mapping']) break
     }
     if (abbreviations[name]) {
       character[name] = abbreviations[name][property]
     } else {
       character[name] = property
     }
-  })
+  }
   character['Block'] = blockFromCodePoint(character['Code Point']).name
   return character
 }
