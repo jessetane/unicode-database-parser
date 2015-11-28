@@ -12,6 +12,7 @@ function parse (line) {
     if (!property) return
     var name = propertyNames[i]
     if (name === 'Code Point') {
+      character['Hex String'] = property
       property = parseInt(property, 16)
     } else if (name === 'Decomposition Mapping') {
       if (property[0] === '<') {
