@@ -1,11 +1,11 @@
 {
   "name": "unicode-data-parser",
   "version": "1.0.0",
-  "description": "Parse a single line from UnicodeData.txt",
+  "description": "Parse individual lines from UnicodeData.txt",
   "scripts": {
-    "test": "npm run get-data && node test",
-    "example": "npm run get-data && node example",
-    "get-data": "[ ! -f UnicodeData.txt ] && node bin/download-unicode-data.js || exit 0"
+    "test": "npm run get-fixture && node test",
+    "example": "npm run get-fixture && node example",
+    "get-fixture": "[ ! -f UnicodeData.txt ] && node bin/download-unicode-data.js || exit 0"
   },
   "dependencies": {
     "unicode-block-from-code-point": "github:jessetane/unicode-block-from-code-point"
