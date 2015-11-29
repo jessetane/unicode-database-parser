@@ -5,23 +5,29 @@ var parser = require('./')
 tape('it works', function (t) {
   t.plan(1)
 
-  var unicodeDataLine = '1F4BB;PERSONAL COMPUTER;So;0;ON;;;;;N;;;;;'
+  var unicodeDataLine = '337F;SQUARE CORPORATION;So;0;L;<square> 682A 5F0F 4F1A 793E;;;;N;SQUARED FOUR IDEOGRAPHS CORPORATION;;;;'
 
   t.deepEqual(parser(unicodeDataLine), {
     'Bidirectional Class': {
-      description: 'most other symbols and punctuation marks',
-      long: 'Other_Neutral'
+      description: 'any strong left-to-right character',
+      long: 'Left_To_Right'
     },
-    Block: 'Miscellaneous Symbols and Pictographs',
+    Block: 'CJK Compatibility',
     'Canonical Combining Class': {
       description: 'Spacing and enclosing marks; also many vowel and consonant signs, even if nonspacing',
       long: 'Not_Reordered'
     },
-    'Code Point': 128187,
+    'Code Point': 13183,
+    'Decomposition Mapping': [ 26666, 24335, 20250, 31038 ],
+    'Decomposition Type': {
+      description: 'CJK squared font variant',
+      tag: '<square>'
+    },
     'General Category': {
       description: 'a symbol of other type',
       long: 'Other_Symbol'
     },
-    Name: 'PERSONAL COMPUTER'
+    'Hex String': '337F',
+    Name: 'SQUARE CORPORATION'
   })
 })
