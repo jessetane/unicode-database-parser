@@ -341,67 +341,51 @@
     },
     "Decomposition Type": {
       "<font>": {
-        "tag": "<font>",
         "description": "Font variant (for example, a blackletter form)"
       },
       "<noBreak>": {
-        "tag": "<noBreak>",
         "description": "No-break version of a space or hyphen"
       },
       "<initial>": {
-        "tag": "<initial>",
         "description": "Initial presentation form (Arabic)"
       },
       "<medial>": {
-        "tag": "<medial>",
         "description": "Medial presentation form (Arabic)"
       },
       "<final>": {
-        "tag": "<final>",
         "description": "Final presentation form (Arabic)"
       },
       "<isolated>": {
-        "tag": "<isolated>",
         "description": "Isolated presentation form (Arabic)"
       },
       "<circle>": {
-        "tag": "<circle>",
         "description": "Encircled form"
       },
       "<super>": {
-        "tag": "<super>",
         "description": "Superscript form"
       },
       "<sub>": {
-        "tag": "<sub>",
         "description": "Subscript form"
       },
       "<vertical>": {
-        "tag": "<vertical>",
         "description": "Vertical layout presentation form"
       },
       "<wide>": {
-        "tag": "<wide>",
         "description": "Wide (or zenkaku) compatibility character"
       },
       "<narrow>": {
-        "tag": "<narrow>",
         "description": "Narrow (or hankaku) compatibility character"
       },
       "<small>": {
-        "tag": "<small>",
         "description": "Small variant form (CNS compatibility)"
       },
       "<square>": {
-        "tag": "<square>",
         "description": "CJK squared font variant"
       },
       "<fraction>": {
-        "tag": "<fraction>",
         "description": "Vulgar fraction form"
       },
       "<compat>": {
-        "tag": "<compat>",
         "description": "Otherwise unspecified compatibility character"
       }
     }

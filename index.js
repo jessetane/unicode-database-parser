@@ -21,7 +21,9 @@ function parse (line) {
         var parts = property.split('> ')
         var tag = parts[0] + '>'
         var typeName = 'Decomposition Type'
-        character['Decomposition Type'] = abbreviations[typeName][tag]
+        var decompositionType = abbreviations[typeName][tag]
+        decompositionType.tag = tag
+        character['Decomposition Type'] = decompositionType
         property = parts[1]
       }
       property = property.split(' ').map(function (n) {
