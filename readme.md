@@ -1,4 +1,4 @@
-# unicode-data-parser
+# unicode-database-parser
 Parses individual lines from http://unicode.org/Public/UNIDATA/UnicodeData.txt
 
 ## Why

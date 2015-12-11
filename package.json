@@ -1,5 +1,5 @@
 {
-  "name": "unicode-data-parser",
+  "name": "unicode-database-parser",
   "version": "1.0.1",
   "description": "Parse individual lines from UnicodeData.txt",
   "scripts": {
