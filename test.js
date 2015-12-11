@@ -12,7 +12,11 @@ tape('it works', function (t) {
       description: 'any strong left-to-right character',
       long: 'Left_To_Right'
     },
-    Block: 'CJK Compatibility',
+    Block: {
+      end: 13311,
+      name: 'CJK Compatibility',
+      start: 13056
+    },
     'Canonical Combining Class': {
       description: 'Spacing and enclosing marks; also many vowel and consonant signs, even if nonspacing',
       long: 'Not_Reordered'

@@ -53,6 +53,6 @@ function parse (line) {
       character[name] = property
     }
   }
-  character['Block'] = blockFromCodePoint(character['Code Point']).name
+  character['Block'] = blockFromCodePoint(character['Code Point'])
   return character
 }
