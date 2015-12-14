@@ -8,7 +8,7 @@
     "get-fixture": "[ ! -f UnicodeData.txt ] && node bin/download-unicode-data.js || exit 0"
   },
   "dependencies": {
-    "unicode-block-from-code-point": "^1.0.0"
+    "unicode-blocks": "^2.0.0"
   },
   "devDependencies": {
     "hyperquest": "^1.2.0",

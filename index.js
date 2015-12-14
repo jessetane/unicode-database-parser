@@ -3,7 +3,7 @@ module.exports = parse
 var defs = require('./defs.json')
 var propertyNames = defs.propertyNames
 var abbreviations = defs.abbreviations
-var blockFromCodePoint = require('unicode-block-from-code-point')
+var blockFromCodePoint = require('unicode-blocks').fromCodePoint
 
 function parse (line) {
   var character = {}
