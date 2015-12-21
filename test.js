@@ -8,30 +8,36 @@ tape('it works', function (t) {
   var unicodeDataLine = '337F;SQUARE CORPORATION;So;0;L;<square> 682A 5F0F 4F1A 793E;;;;N;SQUARED FOUR IDEOGRAPHS CORPORATION;;;;'
 
   t.deepEqual(parser(unicodeDataLine), {
-    'Bidirectional Class': {
-      description: 'any strong left-to-right character',
-      long: 'Left_To_Right'
+    "Hex String": "337F",
+    "Code Point": 13183,
+    "Name": "SQUARE CORPORATION",
+    "General Category": {
+      "long": "Other_Symbol",
+      "description": "a symbol of other type"
     },
-    Block: {
-      end: 13311,
-      name: 'CJK Compatibility',
-      start: 13056
+    "Canonical Combining Class": {
+      "long": "Not_Reordered",
+      "description": "Spacing and enclosing marks; also many vowel and consonant signs, even if nonspacing"
     },
-    'Canonical Combining Class': {
-      description: 'Spacing and enclosing marks; also many vowel and consonant signs, even if nonspacing',
-      long: 'Not_Reordered'
+    "Bidirectional Class": {
+      "long": "Left_To_Right",
+      "description": "any strong left-to-right character"
     },
-    'Code Point': 13183,
-    'Decomposition Mapping': [ 26666, 24335, 20250, 31038 ],
-    'Decomposition Type': {
-      description: 'CJK squared font variant',
-      tag: '<square>'
+    "Decomposition Type": {
+      "description": "CJK squared font variant",
+      "tag": "<square>"
     },
-    'General Category': {
-      description: 'a symbol of other type',
-      long: 'Other_Symbol'
-    },
-    'Hex String': '337F',
-    Name: 'SQUARE CORPORATION'
+    "Decomposition Mapping": [
+      26666,
+      24335,
+      20250,
+      31038
+    ],
+    "Unicode 1 Name": "SQUARED FOUR IDEOGRAPHS CORPORATION",
+    "Block": {
+      "start": 13056,
+      "end": 13311,
+      "name": "CJK Compatibility"
+    }
   })
 })
