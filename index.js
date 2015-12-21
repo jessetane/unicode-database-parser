@@ -11,7 +11,7 @@ function parse (line) {
   var i = -1
   while (++i < properties.length) {
     var property = properties[i]
-    if (!property) break
+    if (!property) continue
     var name = propertyNames[i]
     if (name === 'Code Point') {
       character['Hex String'] = property
@@ -30,22 +30,22 @@ function parse (line) {
         return parseInt(n, 16)
       })
     } else if (name === 'Bidirectional Mirrored') {
-      if (property === 'N') break
+      if (property === 'N') continue
       property = true
     } else if (name === 'Decimal Value') {
       property = parseInt(property, 10)
     } else if (name === 'Digit Value') {
-      if (character['Decimal Value'] !== undefined) break
+      if (character['Decimal Value'] !== undefined) continue
       property = parseInt(property, 10)
     } else if (name === 'Numeric Value') {
-      if (character['Digit Value'] !== undefined) break
+      if (character['Digit Value'] !== undefined) continue
     } else if (name === 'Uppercase Mapping') {
       property = parseInt(property, 16)
     } else if (name === 'Lowercase Mapping') {
       property = parseInt(property, 16)
     } else if (name === 'Titlecase Mapping') {
       property = parseInt(property, 16)
-      if (property === character['Uppercase Mapping']) break
+      if (property === character['Uppercase Mapping']) continue
     }
     if (abbreviations[name]) {
       character[name] = abbreviations[name][property]
