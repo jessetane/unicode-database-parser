@@ -1,6 +1,6 @@
 {
   "name": "unicode-database-parser",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Parse individual lines from UnicodeData.txt",
   "scripts": {
     "test": "npm run get-fixture && node test",
